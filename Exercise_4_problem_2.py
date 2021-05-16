@@ -25,16 +25,40 @@
 
 
 # YOUR CODE HERE to define temp_classifier
+def temp_classifier(temp_celsius):
+  if temp_celsius<-2:
+    return 0
+  elif temp_celsius<2:
+      return 1
+  elif temp_celsius<15:
+      return 2
+  else:
+      return 3
+"""
+the function  that accepts a temperature value in Celsius 
+the function has 3 condition
+Temperatures that below -2 degrees Celsius is 0
+Temperatures equal or warmer than -2, but less than +2 degrees Celsius is 1
+Temperatures equal or warmer than +2, but less than +15 degrees Celsius is 2
+Temperatures equal or warmer than +15 degrees Celsius  is 3
 
+Parameters
+ 
+  temp_Celsius:
+  Grouping the　Celsius  temperatures into four categories.
+  
+return
+define to temp_classifier.
+"""
 # Use your newly created function to print the answers to the following questions:
 
 
 # 1. What is the class value for 16.5 degrees Celsius?
 # YOUR CODE HERE
-#
+temp_classifier(16.5)
 # 2. What is the class value for +2 degrees Celsius?
 # YOUR CODE HERE
-#
+print(temp_classifier(2))
 
 
 # ### Problem 2 tests
@@ -60,15 +84,21 @@ print("ok :)")
 
 
 # ### Check your code
-# 
+#
+"""
+ok :)
+ok :)
+ok :)
+ok :)
+"""
 #  - Are all the variable names are correct?
 #  - Does your code has enough comments?
 #  - Does your function has an informative dosctring?
 
 # YOUR ANSWER HERE. Write your answer as comments
-#
-#
-#
+#Yes,all the variable names are correct.
+#Yes
+#Yes
 #
 #
 # YOUR ANSWER ENDS HERE
